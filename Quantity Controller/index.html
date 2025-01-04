@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantity Controller</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-[#F5ECD5] h-screen w-full flex items-center justify-center">
+      <div class="grid gap-14">
+        <div class="resetContainer">
+          <button
+            class="w-36 h-9 rounded-lg bg-[#292D36] text-white hover:bg-[#4a4e57] transition duration-75"
+            type="button"
+            id="resetbtn"
+          >
+            Reset
+          </button>
+        </div>
+        <div
+          class="QuantityContainer rounded-xl overflow-hidden w-fit h-28 bg-[#22252D] flex items-center justify-center"
+        >
+          <button
+            class="h-full w-32 bg-[#292D36] text-white text-6xl text-center hover:bg-[#4a4e57] transition duration-75"
+            type="button"
+            id="decreasebtn"
+          >
+            -
+          </button>
+
+          <div
+            class="countOutput w-80 h-full bg-[#22252D] flex items-center justify-center text-white text-6xl font-bold"
+          >
+            <span id="result">0</span>
+          </div>
+          <button
+            class="h-full w-32 bg-[#292D36] text-white text-6xl text-center hover:bg-[#4a4e57] transition duration-75"
+            type="button"
+            id="increasebtn"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
